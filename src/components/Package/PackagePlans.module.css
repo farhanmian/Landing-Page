@@ -1,0 +1,31 @@
+.packagePlanContainer {
+    width: 1090px;
+    height: 760px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.packageItem {
+    width: 330px;
+    height: 760px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 5px rgb(221, 221, 221);
+    position: relative;
+    transition: all .3s;
+}
+.packageItem:hover {
+    border: 2px solid #F53838;
+    box-shadow: 0 1px 5px rgba(228, 56, 56, .3);
+    
+}
+
+.image {
+    width: 144.9px;
+    height: 165.37px;
+    margin: auto;
+    margin-top: 79.63px;
+}

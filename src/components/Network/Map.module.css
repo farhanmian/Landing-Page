@@ -1,0 +1,15 @@
+.map {
+    width: 1060px;
+    height: 537.77px;
+    margin: 155.81px 191.02px 29.35px 189.14px
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe {
+    overflow: hidden;
+    border: 0;
+}

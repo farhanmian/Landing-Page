@@ -1,0 +1,28 @@
+html {
+  background-color: #F6F6F6;
+}
+
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 'max-content !important',
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: capitalize;
+  width: 1440px;
+  height: 5189px;
+  margin: auto;
+  background-color: #fff;
+  padding-top: 45.62px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0B132A;
+  position: relative;
+}
+

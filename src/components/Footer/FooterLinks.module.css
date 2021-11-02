@@ -1,0 +1,11 @@
+.footerLinks {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+
+}
+
+.linkContainer0, .linkContainer1 {
+    margin-right: 126px;
+}
+

@@ -1,0 +1,17 @@
+.features {
+    width: 1105.48px;
+    height: 416.17px;
+    margin-top: 95.83px;
+    padding: 0 150px 131.57px 184.52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: content-box;
+    box-shadow: 0 30px 30px rgba(0,0,0,.02);
+}
+
+.textContainer {
+    width: 427.88px;
+    height: 365px;
+    text-align: start;
+}

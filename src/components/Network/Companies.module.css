@@ -1,0 +1,30 @@
+.companies {
+    width: 1135.64px;
+    height: 208.32px;
+    margin-left: 154px;
+    margin-right: 150.36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.netflix {
+    width: 200px;
+    height: 112.5px;
+}
+.reddit {
+    width: 156.25px;
+    height: 50.62px;
+}
+.amazon {
+    width: 277.76px;
+    height: 208.32px;
+}
+.discord {
+    width: 187.02;
+    height: 63.59px;
+}
+.spotify {
+    width: 171.28px;
+    height: 51.34px;
+}

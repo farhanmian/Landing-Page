@@ -1,0 +1,33 @@
+.headerBottom {
+    width: 1140px;
+    height: 200px;
+    margin: 0 150px;
+    margin-top: 103px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 365.5px 430px 344.5px;
+    box-shadow: 0 10px 20px rgba(95, 95, 95, 0.09);
+}
+
+.itemBorder0, .itemBorder1 {
+    width: 0px;
+    height: 125.57px;
+    right: 0%;
+    position: absolute;
+    border: 2px solid #EEEFF2;
+}
+
+.avatar0,.avatar1,.avatar2 {
+    margin-right: 36.5px;
+}
+
+
+/* avatar1: {
+    marginLeft: 91
+},
+avatar2: {
+    marginLeft: 113
+},
+avatar3: {
+    marginLeft: 91.5
+}, */
