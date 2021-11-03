@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => {
             marginBottom: 15
         },
         listItemText: {
-            color: theme.palette.text.secondary, 
+            color: theme.palette.text.secondary,
             fontSize: 'normal',
             '& > *': {
                 fontSize: '14px',
@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => {
             }
         },
         iconContainer: {
+            width: 24,
+            height: 24,
             minWidth: 'max-content',
             marginRight: 10.8,
             color: '#2FAB73',
@@ -59,37 +61,37 @@ export default function Features() {
     const classes = useStyles();
 
     return (
-        <div className={cssClasses.features}>
+        <section className={cssClasses.features}>
+            <div className={cssClasses.container}>
 
-            <div className="imageContainer">
-                <img src={featureIllustration} alt="feature-img" />
+                <div className="imageContainer">
+                    <img src={featureIllustration} alt="feature-img" />
+                </div>
+
+                <div className={cssClasses.textContainer}>
+                    <Typography className={classes.heading} variant="h2" color="primary">
+                        We Provide Many Features You Can Use
+                    </Typography>
+                    <Typography className={classes.text} variant="subtitle1" color="textSecondary">
+                        You can explore the features that we provide with fun and have their own functions each feature.
+                    </Typography>
+
+                    <List className={classes.list}>
+                        {
+                            listItems.map(item => {
+                                return (
+                                    <ListItem className={classes.listItem}>
+                                        <ListItemIcon className={classes.iconContainer}> <img src={Tick} alt="tick" /> </ListItemIcon>
+                                        <ListItemText className={classes.listItemText} primary={item.text} />
+                                    </ListItem>
+                                )
+                            })
+                        }
+
+                    </List>
+
+                </div>
             </div>
-
-            <div className={cssClasses.textContainer}>
-                <Typography className={classes.heading} variant="h2" color="primary">
-                    We Provide Many Features You Can Use
-                </Typography>
-                <Typography className={classes.text} variant="body2" color="textSecondary">
-                    You can explore the features that we provide with fun and have their own functions each feature.
-                </Typography>
-
-                <List className={classes.list}>
-                    {
-                        listItems.map(item => {
-                            return (
-                                <ListItem className={classes.listItem}>
-                                    <ListItemIcon className={classes.iconContainer}> <img src={Tick} alt="tick" /> </ListItemIcon>
-                                    <ListItemText className={classes.listItemText} primary={item.text} />
-                                </ListItem>
-                            )
-                        })
-                    }
-
-
-
-                </List>
-
-            </div>
-        </div>
+        </section>
     )
 }

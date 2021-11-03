@@ -5,16 +5,10 @@ import LogoImg from '../../assets/vectors/logo.png';
 
 const useStyles = makeStyles({
     heading: {
-        fontSize: 20,
-        fontWeight: 500,
-        lineHeight: '23.7px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'
 
-    },
-    headingBold: {
-        fontWeight: 700
     }
 })
 
@@ -26,9 +20,8 @@ function Logo(props) {
         <div className={`${cssClasses.logo} ${props.className}`}>
             <img className={cssClasses.logoImg} src={LogoImg} alt="logo" />
             <Typography variant="h6" className={classes.heading}>
-                Lasles<Typography variant="h6" className={classes.headingBold}>VPN</Typography>
+                Lasles<b>VPN</b>
             </Typography>
-
         </div>
     );
 }

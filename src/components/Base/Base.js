@@ -1,51 +1,36 @@
-import { createTheme, ThemeProvider } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core';
 import React from 'react';
-import Features from '../Features/Features';
-import Footer from '../Footer/Footer';
+import Nav from '../Nav/Nav';
 import Header from '../Header/Header';
-import Network from '../Network/Network';
+import Features from '../Features/Features';
 import Package from '../Package/Package';
+import Network from '../Network/Network';
 import Reviews from '../Reviews/Reviews';
 import Subscribe from '../Subscribe/Subscribe';
+import Footer from '../Footer/Footer';
+import Divider from '../UI/Divider';
 
-const theme = createTheme({
-    typography: {
-        fontFamily: 'Rubik',
-        h2: {
-            fontSize: '35px',
-            fontWeight: 500
-        },
-        h6: {
-            fontSize: '18px',
-            fontWeight: 500
-        }
-    },
-    palette: {
-        primary: {
-            main: '#0B132A'
-        },
-        secondary: {
-            main: '#f53838'
-        },
-        text: {
-            secondary: '#4F5665'
-        }
-    },
-});
-
+import { Theme } from './Theme';
 
 function Base() {
-    return (
-        <ThemeProvider theme={theme}>
-            <Header />
-            <Features />
-            <Package />
-            <Network />
-            <Reviews />
-            <Subscribe />
-            <Footer />
-        </ThemeProvider>
-    );
-}
+        return (
+            <ThemeProvider theme={Theme}>
+                <Nav />
+                <Divider />
+                
+                <Header />
+                <Divider />
+                
+                <Features />
+                <Divider />
+
+                <Package />
+                <Network />
+                <Reviews />
+                <Subscribe />
+                <Footer />
+            </ThemeProvider>
+        );
+    }
 
 export default Base;

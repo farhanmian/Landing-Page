@@ -1,6 +1,9 @@
 .package {
-    margin-top: 79.89px;
-    padding: 0 175px;
+    margin-top: 102px;
+}
+
+.container {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;

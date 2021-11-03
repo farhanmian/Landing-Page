@@ -1,12 +1,11 @@
 .headerBottom {
-    width: 1140px;
-    height: 200px;
-    margin: 0 150px;
+    max-width: 1140px;
+    max-height: 200px;
     margin-top: 103px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 365.5px 430px 344.5px;
-    box-shadow: 0 10px 20px rgba(95, 95, 95, 0.09);
+    grid-template-columns: 364px 428px 364px;
+    box-shadow: 0 30px 40px rgba(136, 126, 126, 0.10);
 }
 
 .itemBorder0, .itemBorder1 {

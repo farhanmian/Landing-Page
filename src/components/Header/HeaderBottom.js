@@ -6,36 +6,6 @@ import location from '../../assets/vectors/location.png';
 import server from '../../assets/vectors/server.png';
 
 
-const useStyles = makeStyles({
-    headerBottomItem: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        position: 'relative'
-    },
-    itemText: {
-        display: 'inline-block'
-    },
-    avatar: {
-        width: 55,
-        height: 55,
-        backgroundColor: '#FFECEC',
-        color: '#F53838'
-},
-    count: {
-    fontWeight: 700,
-    fontSize: 25,
-    lineHeight: '30px'
-},
-label: {
-    fontSize: 20,
-    fontWeight: 400,
-    color: '#4F5665'
-}
-
-    
-});
-
 const analysisData = [
     {
         avatar: person,
@@ -52,7 +22,29 @@ const analysisData = [
         count: '50+',
         label: 'Servers'
     }
-]
+];
+
+const useStyles = makeStyles({
+    headerBottomItem: {
+        height: 200,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative'
+    },
+    itemText: {
+        display: 'inline-block'
+    },
+    avatar: {
+        width: 55,
+        height: 55,
+        backgroundColor: '#FFECEC',
+        color: '#F53838'
+},
+
+    
+});
+
 
 export default function HeaderBottom() {
     const classes = useStyles();
@@ -66,10 +58,10 @@ export default function HeaderBottom() {
                             <img src={e.avatar} alt={e.label} />
                         </Avatar>
                         <div className={classes.itemText}>
-                            <Typography className={classes.count} variant="h6">
+                            <Typography variant="h5">
                                 {e.count}
                             </Typography>
-                            <Typography className={classes.label} variant="body2">
+                            <Typography color="textSecondary" variant="body1">
                                 {e.label}
                             </Typography>
                         </div>

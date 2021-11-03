@@ -3,10 +3,14 @@ import Base from './components/Base/Base';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Base />
-    </div>
+    </main>
   );
 }
 
 export default App;
+
+
+
+

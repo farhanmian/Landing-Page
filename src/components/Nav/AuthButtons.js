@@ -9,13 +9,13 @@ const useStyles = makeStyles({
         '& > *': {
             padding: 0,
             fontWeight: 500,
+            lineHeight: '18.96px',
             textTransform: 'capitalize',
         }
     },
     btn: {
         width: 'max-content',
-        fontSize: 16,
-        marginRight: 30,
+        marginRight: 32,
         '&:hover': {
             backgroundColor: 'transparent'
         }
@@ -26,14 +26,11 @@ const useStyles = makeStyles({
         borderRadius: 50,
         height: 45,
         width: 150,
-        fontSize: 16,
         transition: 'all .3s',
         backfaceVisibility: 'hidden',
         '&:hover': {
             color: '#fff',
             backgroundColor: '#F53838',
-            transform: 'translateY(-5px)',
-            boxShadow: '0 10px 20px rgba(245, 56, 56, 0.15)',
             backfaceVisibility: 'hidden',
         }
     }

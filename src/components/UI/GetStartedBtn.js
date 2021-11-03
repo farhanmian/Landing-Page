@@ -7,14 +7,15 @@ const useStyles = makeStyles({
         color: '#fff',
         fontSize: 16,
         fontWeight: 700,
+        lineHeight: '25px',
         borderRadius: 10,
         textTransform: 'capitalize',
         transition: 'all .3s',
         backfaceVisibility: 'hidden',
+        boxShadow: 'none',
         '&:hover': {
             backgroundColor: '#F53838',
-            boxShadow: '0 15px 35px rgba(245, 56, 56, 0.40)',
-            transform: 'translateY(-5px)',
+            boxShadow: 'none'
         }
     }
 })

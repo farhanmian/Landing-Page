@@ -4,32 +4,31 @@ import GetStartedBtn from "../UI/GetStartedBtn";
 
 const useStyles = makeStyles({
     headerMiddle: {
-        width: '1207px',
-        height: '382.95px',
-        marginLeft: 150,
-        marginRight: 83,
-        marginTop: 90,
+        Maxheight: '382.95px',
+        margin: 'auto',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'flex-end',
         textAlign: 'start'
     },
     textContainer: {
-        width: 555,
-        height: 355.29,
+        maxWidth: 555,
+        maxHeight: 355.29,
+        marginRight: 40,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        textTransform: 'none'
     },
     heading: {
-        width: 555,
-        height: 140,
-        fontSize: '50px',
-        fontWeight: 500,
-        lineHeight: '70px'
+        marginBottom: 20
+    },
+    text: {
+        marginBottom: 50
     },
     btn: {
         padding: '17.5px 77.5px',
+        marginBottom: 24
     }
 })
 
@@ -40,10 +39,10 @@ export default function HeaderMiddle() {
         <div className={classes.headerMiddle}>
             <div className={classes.textContainer}>
                 <Typography className={classes.heading} color="primary" variant="h1">
-                    Want anything to be easy with <b>LaslesVPN.</b>
+                    Want anything to be easy with <b style={{fontWeight: 700}}>LaslesVPN.</b>
                 </Typography>
 
-                <Typography color="textSecondary" variant="body1">
+                <Typography className={classes.text} color="textSecondary" variant="subtitle1">
                     Provide a network for all your needs with ease and fun using <b>LaslesVPN</b> discover interesting features from us.
                 </Typography>
 

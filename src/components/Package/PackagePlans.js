@@ -30,22 +30,26 @@ const planData = [
 const useStyles = makeStyles((theme) => {
     return {
         label: {
+            fontSize: 18,
+            fontWeight: 500,
             height: 30,
             margin: 'auto',
             marginTop: 30,
-            fontSize: 18,
-            fontWeight: 500
         },
         list: {
             width: 'max-content',
             padding: 0,
             margin: 'auto',
-            marginTop: 30.45,
+            marginTop: 28,
+            '& > *': {
+                padding: 0,
+                marginBottom: 10,
+            },
+            '& > :last-child': {
+                margin: 0
+            }
         },
-        listItem: {
-            padding: 0,
-            marginBottom: 10
-        },
+
         listItemIcon: {
             minWidth: 'max-content',
             marginRight: 20
@@ -54,12 +58,12 @@ const useStyles = makeStyles((theme) => {
             margin: 0,
             '& > *': {
                 fontSize: 14,
+                fontWeight: 400,
+                lineHeight: '30px',
                 color: theme.palette.text.secondary
             }
         },
         price: {
-            fontSize: 25,
-            lineHeight: '30px',
             fontWeight: 500,
             position: 'absolute',
             top: 615,
@@ -81,10 +85,11 @@ const useStyles = makeStyles((theme) => {
             left: '50%',
             transform: 'translateX(-50%)',
             transition: 'all .2s',
+            boxShadow: 'none',
             '&:hover': {
                 color: '#fff',
                 backgroundColor: '#F53838',
-                boxShadow: '0 10px 20px rgba(245, 56, 56, 0.35)',
+                boxShadow: 'none',
                 backfaceVisibility: 'hidden',
             }
 
@@ -103,21 +108,21 @@ export default function PackagePlans() {
                         <div className={cssClasses.packageItem}>
                             <img className={cssClasses.image} src={plan.img} alt={plan.label} />
 
-                            <Typography className={classes.label} variant="h6">
+                            <Typography className={classes.label} variant="body1">
                                 {plan.label}
                             </Typography>
 
                             <List className={classes.list}>
                                 {plan.features.map(feature => {
-                                    return <ListItem className={classes.listItem}>
+                                    return <ListItem>
                                         <ListItemIcon className={classes.listItemIcon}> <img src={Tick} alt="tick" /> </ListItemIcon>
                                         <ListItemText className={classes.listItemText}>{feature}</ListItemText>
                                     </ListItem>
                                 })}
                             </List>
 
-                            <Typography className={classes.price}>
-                                {plan.price} / <span className={classes.time}>mo</span>
+                            <Typography variant="h5" className={classes.price}>
+                                {plan.price} <span className={classes.time}>{plan.price.includes('$') && '/ mo'}</span>
                             </Typography>
                             <Button color="secondary" className={classes.btn} variant="outlined">
                                 Select
