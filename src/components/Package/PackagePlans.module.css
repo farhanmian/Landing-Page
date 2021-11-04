@@ -10,7 +10,7 @@
     width: 330px;
     height: 760px;
     border-radius: 10px;
-    margin-right: 44px;
+    margin-right: 50px;
     border: 2px solid #DDDDDD;
     position: relative;
     transition: all .3s;
@@ -31,5 +31,5 @@
     height: 165.37px;
     margin: auto;
     margin-top: 79.63px;
-    margin-bottom: 30px;
+    margin-bottom: 20.5px;
 }

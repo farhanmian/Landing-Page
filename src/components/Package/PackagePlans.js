@@ -32,14 +32,13 @@ const useStyles = makeStyles((theme) => {
         label: {
             fontSize: 18,
             fontWeight: 500,
-            height: 30,
             margin: 'auto',
         },
         list: {
             width: 'max-content',
             padding: 0,
             margin: 'auto',
-            marginTop: 28,
+            marginTop: 30,
             '& > *': {
                 padding: 0,
                 marginBottom: 10,

@@ -4,18 +4,19 @@ import GetStartedBtn from "../UI/GetStartedBtn";
 
 const useStyles = makeStyles({
     headerTop: {
-        Maxheight: '382.95px',
+        maxHeight: '382.95px',
         margin: 'auto',
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'flex-end',
+        alignItems: 'flex-start',
         textAlign: 'start',
         marginBottom: 100
     },
     textContainer: {
         maxWidth: 555,
-        maxHeight: 355.29,
+        maxHeight: 330,
         marginRight: 40,
+        marginTop: 28,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',
