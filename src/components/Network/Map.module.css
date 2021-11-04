@@ -1,7 +1,7 @@
 .map {
     width: 1060px;
     height: 537.77px;
-    margin: 155.81px 191.02px 29.35px 189.14px;
+    margin: 156px auto 28px auto;
     overflow: hidden;
 }
 
@@ -10,8 +10,4 @@
     height: 100%;
 }
 
-.iframe {
-    overflow: hidden;
-    border: 0;
-    margin-top: -10%;
-}
+

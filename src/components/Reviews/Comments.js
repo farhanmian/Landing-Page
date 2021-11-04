@@ -5,7 +5,7 @@ import cssClasses from './Comments.module.css';
 import User1 from '../../assets/img/user1.png';
 import User2 from '../../assets/img/user2.png';
 import User3 from '../../assets/img/user3.png';
-import Star from '../../assets/icons/star.png';
+import Star from '../../assets/icons/star.svg';
 
 const commentsData = [
     {
@@ -36,17 +36,19 @@ const useStyles = makeStyles({
     },
     name: {
         fontSize: 18,
-        height: 18,
+        fontWeight: 500,
+        lineHeight: '20px',
+        marginBottom: 4.5,
     },
     location: {
-        fontSize: 14,
-        height: 14,
-        lineHeight: '30px',
+        lineHeight: '20px'
+    },
+    rating: {
+        marginRight: 10
     },
     text: {
         textAlign: 'start',
-        fontSize: 16,
-        lineHeight: '30px'
+        lineHeight: '25px'
     },
     btnContainer: {
         marginLeft: 865,
@@ -76,26 +78,26 @@ export default function Comments() {
     return (
         <div className={cssClasses.commentsContainer}>
 
-            <div className={cssClasses.commentsList}>
+            <div className={`${cssClasses.commentsList} ${cssClasses.flexBetweenCenter} `}>
                 {
                     commentsData.map(comment => {
                         return <div className={cssClasses.comments}>
-                            <div className={cssClasses.userDetails}>
-                                <span className={cssClasses.userDetailsInfo}>
+                            <div className={`${cssClasses.userDetails} ${cssClasses.flexBetweenCenter}`}>
+                                <span className={cssClasses.flexBetweenCenter}>
                                     <Avatar className={classes.avatar}> <img src={comment.img} alt="user" /> </Avatar>
                                     <span>
-                                        <Typography className={classes.name} variant="h6">{comment.name}</Typography>
+                                        <Typography className={classes.name} variant="subtitle1">{comment.name}</Typography>
                                         <Typography className={classes.location} variant="body2" color="textSecondary">{comment.location}</Typography>
                                     </span>
                                 </span>
 
-                                <span>
-                                    <Typography>4.5</Typography>
+                                <span className={cssClasses.flexBetweenCenter}>
+                                    <Typography className={classes.rating} variant="subtitle1">4.5</Typography>
                                     <img src={Star} alt="star" />
                                 </span>
                             </div>
 
-                            <Typography className={classes.text} color="primary" variant="body1">
+                            <Typography className={classes.text} color="primary" variant="subtitle1">
                                 {comment.text}
                             </Typography>
                         </div>
@@ -107,7 +109,7 @@ export default function Comments() {
             </div>
 
             <div className={cssClasses.commentsControls}>
-                <span className={cssClasses.commentsTracker}>
+                <span className={`${cssClasses.commentsTracker} ${cssClasses.flexBetweenCenter}`}>
                     <span className={cssClasses.active} />
                     <span />
                     <span />

@@ -1,4 +1,4 @@
-import { Typography, List, ListItem, ListItemText, makeStyles } from '@material-ui/core'
+import { Typography, List, ListItem, makeStyles, Link } from '@material-ui/core'
 import cssClasses from './FooterLinks.module.css';
 
 const linkData = [
@@ -19,20 +19,27 @@ const linkData = [
 const useStyles = makeStyles((theme) => {
     return {
         heading: {
-            height: 30,
+            fontWeight: 500,
             fontSize: 18,
             marginBottom: 20,
         },
         list: {
             padding: 0,
-            margin: 0
+            margin: 0,
+            '& > :last-child': {
+                marginBottom: 0
+            }
         },
         listItem: {
+            width: 'max-content',
             padding: 0,
+            marginBottom: 10,
         },
         listItemText: {
+            fontSize: 16,
+            fontWeight: 400,
+            lineHeight: '30px',
             cursor: 'pointer',
-            color: theme.palette.text.secondary
         }
     }
 
@@ -45,16 +52,16 @@ export default function FooterLinks() {
             {
                 linkData.map((e, i) => {
                     return <div className={`${cssClasses['linkContainer' + i]}`}>
-                        <Typography className={classes.heading} color="primary" variant="h6">
+                        <Typography className={classes.heading} color="primary" variant="body1">
                             {e.category}
                         </Typography>
                         <List className={classes.list}>
                             {e.links.map((link, i) => {
                                 return (
                                     <ListItem className={classes.listItem}>
-                                        <ListItemText className={classes.listItemText}>
+                                        <Link href="#" className={classes.listItemText} color="textSecondary">
                                             {link}
-                                        </ListItemText>
+                                        </Link>
                                     </ListItem>
                                 )
                             })}

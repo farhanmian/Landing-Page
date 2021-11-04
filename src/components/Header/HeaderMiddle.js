@@ -1,5 +1,5 @@
 import { Typography, makeStyles } from "@material-ui/core";
-import Illustration from '../../assets/Illustration/Illustration 1.png';
+import illustration from '../../assets/img/illustration1.png';
 import GetStartedBtn from "../UI/GetStartedBtn";
 
 const useStyles = makeStyles({
@@ -50,7 +50,7 @@ export default function HeaderMiddle() {
             </div>
 
             <div>
-                <img src={Illustration} alt="" />
+                <img src={illustration} alt="" />
             </div>
         </div>
     )

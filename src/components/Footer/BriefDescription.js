@@ -1,9 +1,9 @@
 import { Typography, Link, Avatar, makeStyles } from '@material-ui/core'
 
 import cssClasses from './BriefDescription.module.css';
-import Facebook from '../../assets/icons/facebook.png'
-import Instagram from '../../assets/icons/instagram.png';
-import Twitter from '../../assets/icons/twitter.png';
+import facebook from '../../assets/icons/facebook.svg'
+import instagram from '../../assets/icons/instagram.svg';
+import twitter from '../../assets/icons/twitter.svg';
 import Logo from '../UI/Logo'
 
 const useStyles = makeStyles({
@@ -19,7 +19,7 @@ const useStyles = makeStyles({
         width: 33.6,
         height: 33.6,
         boxShadow: '0px 12px 15px rgba(0,0,0,.08)',
-        backgroundColor: 'transparent'
+        backgroundColor: '#F53838'
     },
     copyright: {
         width: 132,
@@ -38,15 +38,15 @@ export default function BriefDescription() {
     return (
         <div className={cssClasses.briefDescription}>
             <Logo className={cssClasses.logo} />
-            <Typography className={classes.text} color="textSecondary" variant="body1">
+            <Typography className={classes.text} color="textSecondary" variant="subtitle1">
                 <b>LaslesVPN</b> is a private virtual network that has unique features and has high security.
             </Typography>
             <span className={cssClasses.socialLinks}>
-                <Link className={classes.marginright} href="#"> <Avatar className={classes.avatar} ><img src={Facebook} alt="instagram" /></Avatar> </Link>
-                <Link className={classes.marginright} href="#"> <Avatar className={classes.avatar} ><img src={Twitter} alt="twitter" /></Avatar> </Link>
-                <Link href="#"> <Avatar className={classes.avatar} ><img src={Instagram} alt="instagram" /></Avatar> </Link>
+                <Link className={classes.marginright} href="#"> <Avatar className={classes.avatar} ><img src={facebook} alt="instagram" /></Avatar> </Link>
+                <Link className={classes.marginright} href="#"> <Avatar className={classes.avatar} ><img src={twitter} alt="twitter" /></Avatar> </Link>
+                <Link href="#"> <Avatar className={classes.avatar} ><img src={instagram} alt="instagram" /></Avatar> </Link>
             </span>
-            <Typography className={classes.copyright} variant="body1">
+            <Typography className={classes.copyright} variant="subtitle1">
                 ©2020LaslesVPN
             </Typography>
         </div>

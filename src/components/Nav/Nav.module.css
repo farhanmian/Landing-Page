@@ -1,17 +1,17 @@
 .nav {
-    height: 45px;
-    display: flex;
-    align-items: center;
-    margin: 44px auto;
-    justify-content: center;
-    /* justify-content: space-between; */
-    /* padding: 0 150px; */
+    margin: 44px 0;
 }
 
-.logo {
-    margin-right: 160px;
+.container {
+    max-width: 1207px;
+    height: 45px;
+    display: flex;
+    margin: auto;
+    align-items: center;
     justify-content: center;
+
 }
+
 
 
 

@@ -14,6 +14,7 @@
     border: 2px solid #DDDDDD;
     position: relative;
     transition: all .3s;
+    box-sizing: border-box;
 }
 .packagePlanContainer > :last-child {
     margin-right: 0;
@@ -30,4 +31,5 @@
     height: 165.37px;
     margin: auto;
     margin-top: 79.63px;
+    margin-bottom: 30px;
 }

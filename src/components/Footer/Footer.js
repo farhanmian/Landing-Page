@@ -4,9 +4,11 @@ import FooterLinks from './FooterLinks';
 
 export default function Footer() {
     return (
-        <div className={cssClasses.footer}>
-            <BriefDescription />
-            <FooterLinks />
-        </div>
+        <footer className={cssClasses.footer}>
+            <div className={cssClasses.container}>
+                <BriefDescription />
+                <FooterLinks />
+            </div>
+        </footer>
     )
 }

@@ -1,7 +1,7 @@
 import { Typography, List, ListItem, ListItemIcon, ListItemText, makeStyles } from '@material-ui/core'
-import featureIllustration from '../../assets/Illustration/Illustration 2.png';
+import illustration from '../../assets/img/illustration2.png';
 import cssClasses from './Features.module.css';
-import Tick from '../../assets/icons/tick.png';
+import Tick from '../../assets/icons/tick.svg';
 
 const useStyles = makeStyles((theme) => {
     return {
@@ -65,7 +65,7 @@ export default function Features() {
             <div className={cssClasses.container}>
 
                 <div className="imageContainer">
-                    <img src={featureIllustration} alt="feature-img" />
+                    <img src={illustration} alt="feature-img" />
                 </div>
 
                 <div className={cssClasses.textContainer}>

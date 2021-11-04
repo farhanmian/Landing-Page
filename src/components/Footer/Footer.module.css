@@ -1,11 +1,17 @@
 .footer {
-    width: 1440px;
-    height: 563.12px;
-    margin-top: 177px;
+    margin-top: 88px;
     background-color: #F8F8F8;
-    padding: 0 150px;
-    padding-top: 180.78px;
+    padding: 176px 148px;
+    padding-bottom: 100px;
+    /* padding-top: 180px; */
+}
+
+
+.container {
+    margin: auto;
+    max-width: 1140px;
+    max-height: 284px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 }

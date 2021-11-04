@@ -1,8 +1,10 @@
 .package {
     margin-top: 102px;
+    margin-bottom: 73px;
 }
 
 .container {
+    max-width: 1090px;
     margin: auto;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 .briefDescription {
-    margin-bottom: 140.94px;
+    max-width: 340px;
+    margin-right: 230px;
     text-align: start;
 }
 .logo {
@@ -14,5 +15,4 @@
     width: 33.6px;
     height: 33.6px;
 }
-
 

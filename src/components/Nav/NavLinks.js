@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => {
             }
         },
         navLinks: {
-            marginRight: 150,
+            marginRight: 152,
         },
         lashChild: {
             marginRight: 0,

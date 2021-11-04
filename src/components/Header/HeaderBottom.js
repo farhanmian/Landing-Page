@@ -1,9 +1,9 @@
 import cssClasses from './HeaderBottom.module.css';
 import { Avatar, Typography, makeStyles } from '@material-ui/core';
 
-import person from '../../assets/vectors/person.png';
-import location from '../../assets/vectors/location.png';
-import server from '../../assets/vectors/server.png';
+import person from '../../assets/vectors/person.svg';
+import location from '../../assets/vectors/location.svg';
+import server from '../../assets/vectors/server.svg';
 
 
 const analysisData = [

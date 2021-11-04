@@ -1,11 +1,10 @@
-import mapImg from '../../assets/img/map.png';
 import cssClasses from './Map.module.css';
 
 export default function Map() {
     return (
         <div className={cssClasses.map}>
-            {/* <img className={classes.img} src={mapImg} alt="map" /> */}
-            <iframe className={cssClasses.iframe} src="https://www.google.com.qa/maps/d/u/0/embed?mid=1BeyAdnsIQBZ3y6agh4owzM4lLNtqDY-o" width="100%" height="120%"></iframe>
+            <iframe width='100%' height='100%' src="https://api.mapbox.com/styles/v1/farhan099/ckvkizg753wal14oalsb8bb9c.html?title=false&access_token=pk.eyJ1IjoiZmFyaGFuMDk5IiwiYSI6ImNrdWY3cHFwZTFycDEycWxtZDJzejN0NWkifQ.ycqqxVZ9iwxXQFVu5uKm-A&zoomwheel=false#0.85/0/42.3" title="landing-page-map" style={{ border: 'none' }}></iframe>
         </div>
     )
 }
+

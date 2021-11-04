@@ -1,9 +1,9 @@
 import { Typography, Button, List, ListItem, ListItemIcon, ListItemText, makeStyles } from '@material-ui/core'
 import cssClasses from './PackagePlans.module.css';
-import Free from '../../assets/Illustration/free.png';
-import Standard from '../../assets/Illustration/standard.png';
-import Premium from '../../assets/Illustration/premium.png';
-import Tick from '../../assets/icons/tick2.png';
+import Free from '../../assets/img/free.png';
+import Standard from '../../assets/img/standard.png';
+import Premium from '../../assets/img/premium.png';
+import Tick from '../../assets/icons/tick2.svg';
 
 const planData = [
     {
@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => {
             fontWeight: 500,
             height: 30,
             margin: 'auto',
-            marginTop: 30,
         },
         list: {
             width: 'max-content',

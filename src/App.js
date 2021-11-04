@@ -11,6 +11,6 @@ function App() {
 
 export default App;
 
-
-
-
+/*
+ mapbox default token = pk.eyJ1IjoiZmFyaGFuMDk5IiwiYSI6ImNrdWY3cHFwZTFycDEycWxtZDJzejN0NWkifQ.ycqqxVZ9iwxXQFVu5uKm-A 
+*/

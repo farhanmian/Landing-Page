@@ -25,8 +25,15 @@ function Base() {
                 <Divider />
 
                 <Package />
+                <Divider />
+
+
                 <Network />
+                <Divider />
+
                 <Reviews />
+                <Divider />
+
                 <Subscribe />
                 <Footer />
             </ThemeProvider>

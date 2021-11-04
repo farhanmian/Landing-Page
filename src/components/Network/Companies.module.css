@@ -1,8 +1,7 @@
 .companies {
     width: 1135.64px;
     height: 208.32px;
-    margin-left: 154px;
-    margin-right: 150.36px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;

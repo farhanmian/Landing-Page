@@ -1,5 +1,4 @@
 import HeaderMiddle from "./HeaderMiddle";
-import Nav from "../Nav/Nav";
 import HeaderBottom from "./HeaderBottom";
 import cssClasses from './Header.module.css';
 

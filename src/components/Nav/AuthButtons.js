@@ -22,12 +22,13 @@ const useStyles = makeStyles({
     },
     outlineBtn: {
         
-        borderColor: '#F53855',
+        border: '1px solid #F53855',
         borderRadius: 50,
         height: 45,
         width: 150,
         transition: 'all .3s',
         backfaceVisibility: 'hidden',
+        boxSizing: 'border-box',
         '&:hover': {
             color: '#fff',
             backgroundColor: '#F53838',
