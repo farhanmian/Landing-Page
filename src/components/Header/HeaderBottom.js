@@ -1,9 +1,9 @@
 import cssClasses from './HeaderBottom.module.css';
-import { Avatar, Typography, makeStyles } from '@material-ui/core';
+import { Avatar, Typography, makeStyles, Grid } from '@material-ui/core';
 
-import person from '../../assets/vectors/person.svg';
-import location from '../../assets/vectors/location.svg';
-import server from '../../assets/vectors/server.svg';
+import person from '../../assets/icons/person.svg';
+import location from '../../assets/icons/location.svg';
+import server from '../../assets/icons/server.svg';
 
 
 const analysisData = [
@@ -25,6 +25,12 @@ const analysisData = [
 ];
 
 const useStyles = makeStyles({
+    headerBottom: {
+        maxWidth: '1140px',
+        maxHeight: '200px',
+        borderRadius: '10px',
+        boxShadow: '0 50px 60px rgba(136, 126, 126, 0.10)',
+    },
     headerBottomItem: {
         height: 200,
         display: 'flex',
@@ -40,9 +46,9 @@ const useStyles = makeStyles({
         height: 55,
         backgroundColor: '#FFECEC',
         color: '#F53838'
-},
+    },
 
-    
+
 });
 
 
@@ -50,10 +56,10 @@ export default function HeaderBottom() {
     const classes = useStyles();
 
     return (
-        <div className={cssClasses.headerBottom}>
+        <Grid container className={classes.headerBottom}>
             {
                 analysisData.map((e, i) => {
-                    return <div className={classes.headerBottomItem}>
+                    return <Grid item md={4} className={classes.headerBottomItem}>
                         <Avatar className={`${cssClasses['avatar' + i]} ${classes.avatar}`}>
                             <img src={e.avatar} alt={e.label} />
                         </Avatar>
@@ -65,10 +71,10 @@ export default function HeaderBottom() {
                                 {e.label}
                             </Typography>
                         </div>
-                        <span className={cssClasses['itemBorder'+i]} />
-                    </div>
+                        <span className={cssClasses['itemBorder' + i]} />
+                    </Grid>
                 })
             }
-        </div>
+        </Grid>
     )
 }

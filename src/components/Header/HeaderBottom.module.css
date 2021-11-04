@@ -1,13 +1,3 @@
-.headerBottom {
-    max-width: 1140px;
-    max-height: 200px;
-    margin-top: 103px;
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 364px 428px 364px;
-    box-shadow: 0 30px 40px rgba(136, 126, 126, 0.10);
-}
-
 .itemBorder0, .itemBorder1 {
     width: 0px;
     height: 125.57px;
@@ -19,14 +9,3 @@
 .avatar0,.avatar1,.avatar2 {
     margin-right: 36.5px;
 }
-
-
-/* avatar1: {
-    marginLeft: 91
-},
-avatar2: {
-    marginLeft: 113
-},
-avatar3: {
-    marginLeft: 91.5
-}, */

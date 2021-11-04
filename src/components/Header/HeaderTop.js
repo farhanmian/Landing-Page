@@ -3,13 +3,14 @@ import illustration from '../../assets/img/illustration1.png';
 import GetStartedBtn from "../UI/GetStartedBtn";
 
 const useStyles = makeStyles({
-    headerMiddle: {
+    headerTop: {
         Maxheight: '382.95px',
         margin: 'auto',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'flex-end',
-        textAlign: 'start'
+        textAlign: 'start',
+        marginBottom: 100
     },
     textContainer: {
         maxWidth: 555,
@@ -32,11 +33,11 @@ const useStyles = makeStyles({
     }
 })
 
-export default function HeaderMiddle() {
+export default function HeaderTop() {
     const classes = useStyles();
 
     return (
-        <div className={classes.headerMiddle}>
+        <div className={classes.headerTop}>
             <div className={classes.textContainer}>
                 <Typography className={classes.heading} color="primary" variant="h1">
                     Want anything to be easy with <b style={{fontWeight: 700}}>LaslesVPN.</b>
